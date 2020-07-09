@@ -28,7 +28,7 @@ public class SimpleMove : MonoBehaviour {
 
         if (startLarge)
         {
-            GetComponent<RectTransform>().localScale = Vector3.MoveTowards(transform.localScale, Vector3.zero, shrinkSpeed * Time.deltaTime);
+            transform.localScale = Vector3.MoveTowards(transform.localScale, Vector3.one * size, shrinkSpeed * Time.deltaTime);
         }
 	}
 }

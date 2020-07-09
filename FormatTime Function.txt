@@ -1,0 +1,8 @@
+ public string FormatTime(float timeToFormat) //doing this enough that i should make it a function.  call it to format a time.
+    {
+        int fminutes = Mathf.FloorToInt(timeToFormat / 60f);
+        int fseconds = Mathf.FloorToInt(timeToFormat - fminutes * 60);
+        string formattedTime = string.Format("{0:00}:{1:00}", fminutes, fseconds);
+
+        return formattedTime;
+    }

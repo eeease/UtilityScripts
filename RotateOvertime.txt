@@ -1,0 +1,12 @@
+    public IEnumerator SpinMeRightRound(float duration)
+    {
+        Quaternion startRot = transform.rotation;
+        float t = 0.0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            transform.rotation = startRot * Quaternion.AngleAxis(t / duration * 360f, Vector3.up); //or transform.right if you want it to be locally based
+            yield return null;
+        }
+        transform.rotation = startRot;
+    }

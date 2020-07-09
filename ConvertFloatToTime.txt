@@ -1,0 +1,17 @@
+WEBVTT
+
+00:00:00.195 --> 00:00:03.422
+Scratch Coding Cards with MommyDaddyMe
+
+00:00:03.594 --> 00:00:05.273
+Today's lesson is...
+
+00:00:05.391 --> 00:00:07.031
+Color Clicker
+
+
+Check out more tutorials online or on the app.
+
+You can even learn with a live tutor!
+
+Till next time - Keep coding!
