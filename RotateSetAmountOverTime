@@ -1,0 +1,16 @@
+//this is set to be fairly flexible.
+//feel free to remove any/all params to make it quicker.
+
+IEnumerator Rotate(float duration, float angleAmnt, Transform obj)
+    {
+        Quaternion startRot = obj.transform.rotation;
+        float t = 0.0f;
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            obj.transform.rotation = startRot * Quaternion.AngleAxis(t / duration * angleAmnt, obj.transform.forward); //or Vector3.right if you want it to be world based
+            yield return null;
+        }
+        obj.transform.rotation = startRot;
+    }
+   
