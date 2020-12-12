@@ -1,0 +1,12 @@
+public float GetClipTime(Animator anim, string aName)
+    {
+        float time = 0;
+        foreach (AnimationClip c in anim.runtimeAnimatorController.animationClips)
+        {
+            if (c.name == aName)
+            {
+                time = c.length;
+            }
+        }
+        return time;
+    }
